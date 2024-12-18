@@ -1,0 +1,48 @@
+/* Center text in th and td */
+th, td {
+  text-align: center;
+}
+
+/* Style for tr */
+table tr {
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  /* Hide thead */
+  thead {
+    display: none;
+  }
+  
+  /* Change h1 font size */
+  h1 {
+    font-size: 1.3em;
+  }
+  
+  /* Remove table border */
+  table {
+    border: 0;
+  }
+  
+  /* Style tbody tr */
+  tbody tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+  
+  /* Style tbody td */
+  tbody td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+  
+  /* Remove bottom border from last td */
+  tbody td:last-child {
+    border-bottom: 0;
+  }
+}
